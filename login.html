@@ -1,14 +1,93 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>This is assignment 4</title>
-    </head>
-    <Header>
-        <h1> Login page</h1>
-    </Header>
-    <body>
-        <div>
-            main content
-        </div>
-    </body>
+
+<head>
+    <title>Login Page</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(132, 145, 77)
+    }
+    .main-container {
+        display: grid;
+        grid-template-rows: 1fr 15fr 1fr;
+    }
+    .r1 > img {
+        width: 100vw;
+        height: 175px;
+    }
+    .r3 {
+        width: 100vw;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    .login-form {
+        display: grid;
+        background-color: blue;
+        justify-self: center;
+        align-self: center;
+        grid-template-rows: 5fr 1fr 1fr 1fr;
+        width: 450px;
+        height: 450px;
+        grid-row-gap: 1em;
+        padding: 15px;
+
+    }
+    .login-form > img {
+        width: 350px;
+        height: 250px;
+        justify-self: center;
+    }
+
+    .r2 {
+        display: grid;
+        background-color: lightpink;
+        width: 80%;
+        margin-left:10%; 
+        padding-top: -300px;
+    }
+
+    .btn-login {
+        height: 40px;
+        width: 100px;
+        background-color: brown;
+        color:white;
+        align-self: right;
+        justify-self: right;
+        font-weight: bold;
+        margin-right: 50px; 
+    }
+    .login-input {
+        width: 330px;
+        height: 40px;
+        justify-self: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+</style>
+<body class="main-container">
+    <div class="r1">
+      <img class="logo-name" src="./img/logo_name.gif" alt="logo">
+    </div>
+    <div class="r2">
+        <form class="login-form">
+            <img src="./img/bg_background_sign_in_form.jpg" alt="Logo form">
+            <input type="text" class="login-input" placeholder="Username">
+            <input type="password" class="login-input" placeholder="Password">
+            <button type="submit" class="btn-login" href="./home.html">Login</button>
+        </form>
+    </div>
+    <div class="r3">
+            <p> Copyright (C) 2019. Created by Jose Rosales</p>
+    </div>
+</body>
+
 </html>
