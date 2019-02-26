@@ -17,6 +17,10 @@
         height: 100vh;
         background-color: blanchedalmond;
     }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
 
     .grid-container {
         display: grid;
@@ -25,7 +29,7 @@
     }
 
     .r1>img {
-        width: 100%;
+        width: 100vw;
         height: 175px;
     }
 
@@ -39,15 +43,27 @@
         display: grid;
         grid-template-columns: 1fr 5fr 2fr;
         background-color: aquamarine;
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        height: 100%;
         align-self: center;
     }
     .left-nav {
         list-style-type: none;
     }
+    .left-nav > li {
+        border: 1px solid green;
+        background-color: azure; 
+    }
+    .left-nav > li > a {
+        display: block;
+        padding: 15px;
+    }
+    .left-nav > li > a:hover {
+        background-color: darkred;
+        color: white;
+    }
     .r2c1, .r2c3 {
-        background-color: blueviolet;
+        background-color: azure;
     }
 </style>
 
