@@ -24,7 +24,7 @@
 
     .grid-container {
         display: grid;
-        grid-template-rows: 1fr 13fr 1fr;
+        grid-template-rows: 3fr 13fr 1fr;
         grid-row-gap: 1em;
     }
 
@@ -43,9 +43,16 @@
         display: grid;
         grid-template-columns: 1fr 5fr 2fr;
         background-color: aquamarine;
-        width: 100%;
+        width: 98%;
+        margin-left: 1%; 
         height: 100%;
         align-self: center;
+    }
+    .txt-center {
+        text-align: center;
+        margin: 15px auto 10px;
+        border-bottom: 1px solid red;
+        padding: 15px;
     }
     .left-nav {
         list-style-type: none;
@@ -53,17 +60,44 @@
     .left-nav > li {
         border: 1px solid green;
         background-color: azure; 
+        
     }
     .left-nav > li > a {
         display: block;
-        padding: 15px;
+        padding: 15px 50px;
+        
     }
     .left-nav > li > a:hover {
         background-color: darkred;
-        color: white;
+        color: white; 
     }
     .r2c1, .r2c3 {
         background-color: azure;
+    }
+    .r2c2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: min-content;
+
+    }
+    .h2-content {
+
+    }
+    .r2c2 > img {
+        width: 100%;
+        align-self: center;
+        max-height: 130px;
+
+    }
+    .r3 {
+        text-align: center;
+        color: white;
+        align-items: center;
+    }
+    .footer {
+        align-self: center;
+        justify-self: center;
+        padding-top: 15px;
     }
 </style>
 
@@ -73,6 +107,7 @@
     </div>
     <div class="r2">
         <div class="r2c1">
+                <h2 class="txt-center"> Navigation</h2>
             <div class="left-nav">
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="./about.html">About Us</a></li>
@@ -82,15 +117,22 @@
             </div>
         </div>
         <div class="r2c2">
-
+                <h2 class="txt-center h2-content">Gallery</h2>
+                <img src="./img/gy_img1.jpg">
+                <img src="./img/gy_img1.jpg">
+                <img src="./img/gy_img1.jpg">
+                <img src="./img/gy_img1.jpg">
+                <img src="./img/gy_img1.jpg">
+                <img src="./img/gy_img1.jpg">
+                <img src="./img/gy_img1.jpg">
+                <img src="./img/gy_img1.jpg">
         </div>
         <div class="r2c3">
-            <h1>Product lisnenig</h1>
-
+                <h2 class="txt-center">Recent products</h2>
         </div>
     </div>
     <div class="r3">
-        footer
+            <div class="footer">Copyright @2019. Created by Jose Rosales</div>
     </div>
 
 </Body>

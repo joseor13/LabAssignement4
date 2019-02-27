@@ -21,6 +21,9 @@
     h1 {
         text-align: center;
     }
+    p {
+        padding-right: 15px; 
+    }
 
     .grid-container {
         display: grid;
@@ -32,20 +35,21 @@
         display: grid;
         grid-template-columns: .25fr 13fr .25fr;
         background-color: azure;
-        width: 80%;
-        margin-left: 10%;
-        padding-top: -300px;
+        width: 98%;
+        margin-left: 1%;
     }
 
-    .r1 > img {
+    .r1>img {
         width: 100vw;
         height: 175px;
 
     }
+
     .r3 {
         background-color: darkblue;
         text-align: center;
         width: 100vw;
+        color: white;
     }
 
     .r2c1,
@@ -55,7 +59,9 @@
 
     .r2c2 {
         background-color: rgb(137, 132, 163);
-        grid-template-rows: 6fr 6fr;    }
+        grid-template-rows: 8fr 8fr;
+        padding: 5px 10px;
+    }
 
     .r2c2r1,
     .r2c2r2 {
@@ -64,30 +70,30 @@
         width: 100%;
     }
 
-    .r2c2r2 {
-        margin-top: 70px;
+    .r2c2r2  {
+        margin-top: 100px;
 
     }
 
-    .r2c2r1>.top-image>p {
+    .r2c2r1> img>p, .r2c2r2>img>p  {
         display: block;
         padding: 15px;
     }
 
     .top-image {
-        padding: 15px;
+        padding-right: 15px;
         float: left;
-
-    }
-
-    .r2c2r2>.bottom-image>p {
-        display: block;
-        padding: 15px;
     }
 
     .bottom-image {
         float: right;
-        padding: 15px;
+        padding: 0px 25px;
+    }
+
+    .footer {
+        align-self: center;
+        justify-self: center;
+        padding-top: 15px;
     }
 </style>
 
@@ -101,7 +107,7 @@
         <div class="r2c2">
             <div class="r2c2r1">
                 <img class="top-image" src="./img/bd_image1.PNG" alt="angular">
-                <h1>SPEED & PERFORMANCE</h1>
+                <h1 href="./home.html">SPEED & PERFORMANCE</h1>
                 <p>Build features quickly with simple, declarative templates. Extend the template language with your
                     own
                     components and use a wide array of existing components. Get immediate Angular-specific help and
@@ -125,13 +131,24 @@
                     view to the model and from the model to the view are synchronous and aren't dependent on the UI
                     rendered. The diagrams below use the same favorite color example to demonstrate how data flows
                     when an input field's value is changed from the view and then from the model</p>
+
+                <p>Installing the Angular service worker is as simple as including an NgModule. In addition to
+                    registering the Angular service worker with the browser, this also makes a few services available
+                    for injection which interact with the service worker and can be used to control it. For example, an
+                    application can ask to be notified when a new update becomes available, or an application can ask
+                    the service worker to check the server for available updates. To support these behaviors, the
+                    Angular service worker loads a manifest file from the server. The manifest describes the resources
+                    to cache and includes hashes of every file's contents. When an update to the application is
+                    deployed, the contents of the manifest change, informing the service worker that a new version of
+                    the application should be downloaded and cached. This manifest is generated from a CLI-generated
+                    configuration file called ngsw-config.json.</p>
             </div>
         </div>
         <div class="r2c3">
         </div>
     </div>
     <div class="r3">
-        footer
+        <div class="footer">Copyright @2019. Created by Jose Rosales</div>
     </div>
 </body>
 
