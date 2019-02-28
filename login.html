@@ -13,7 +13,13 @@
     html, body {
         width: 100vw;
         height: 100vh;
-        background-color: lightslategray;    }
+        background-image: url('./img/bg_back.png');  
+    }
+    .box-shadow {
+        -webkit-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
+        -moz-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
+        box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
+    }
     .main-container {
         display: grid;
         grid-template-rows: 1fr 15fr 1fr;
@@ -49,7 +55,7 @@
 
     .r2 {
         display: grid;
-        background-color: lightpink;
+        background-color: rgb(58, 155, 155);
         width: 98%;
         margin-left:1%; 
         padding-top: -300px;
@@ -79,18 +85,18 @@
     }
 </style>
 <body class="main-container">
-    <div class="r1">
+    <div class="r1 box-shadow">
       <img class="logo-name" src="./img/logo_name.gif" alt="logo">
     </div>
-    <div class="r2">
-        <form class="login-form">
+    <div class="r2 box-shadow">
+        <form class="login-form box-shadow">
             <img src="./img/bg_background_sign_in_form.jpg" alt="Logo form">
             <input type="text" class="login-input" placeholder="Username">
             <input type="password" class="login-input" placeholder="Password">
             <button type="submit" class="btn-login" href="./home.html">Login</button>
         </form>
     </div>
-    <div class="r3">
+    <div class="r3 box-shadow">
             <div class="footer">Copyright @2019. Created by Jose Rosales</div>
     </div>
 </body>

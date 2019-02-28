@@ -21,13 +21,10 @@
     h1 {
         text-align: center;
     }
-    p {
-        padding-right: 15px; 
-    }
 
     .grid-container {
         display: grid;
-        grid-template-rows: 3fr 15fr 2fr;
+        grid-template-rows: 3fr 13fr 1fr;
         grid-row-gap: 1em;
     }
 
@@ -42,13 +39,10 @@
     .r1>img {
         width: 100vw;
         height: 175px;
-
     }
-
     .r3 {
         background-color: darkblue;
         text-align: center;
-        width: 100vw;
         color: white;
     }
 
@@ -60,24 +54,24 @@
     .r2c2 {
         background-color: rgb(137, 132, 163);
         grid-template-rows: 8fr 8fr;
-        padding: 5px 10px;
+        padding: 5px 20px;
     }
 
     .r2c2r1,
     .r2c2r2 {
-        padding: 5px 20px;
-        height: 50%;
+        padding: 5px 0px;
+        height: 100%;
         width: 100%;
     }
 
     .r2c2r2  {
         margin-top: 100px;
-
     }
 
-    .r2c2r1> img>p, .r2c2r2>img>p  {
+    .r2c2r1> img>h1 >p, .r2c2r2>img>h1>p  {
         display: block;
         padding: 15px;
+        width: 100vw;
     }
 
     .top-image {
@@ -87,7 +81,7 @@
 
     .bottom-image {
         float: right;
-        padding: 0px 25px;
+        padding: 15px 0px 15px 15px;
     }
 
     .footer {
