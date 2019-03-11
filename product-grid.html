@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+    }
+
+    html,
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./img/bg_back.png');
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-rows: 3fr 13fr 1fr;
+        grid-gap: 1em;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    h2 {
+        background-color: darkred;
+        color: yellow;
+    }
+
+    .r1>img {
+        width: 100vw;
+        height: 175px;
+    }
+
+    .r2 {
+        width: 98%;
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        background-color: aquamarine;
+        width: 98%;
+        margin-left: 1%;
+        height: 100%;
+        align-self: center;
+        grid-column-gap: 0.5em;
+    }
+
+    .r3 {
+        background-color: darkblue;
+        text-align: center;
+        width: 100vw;
+        color: white;
+    }
+
+    .txt-center {
+        text-align: center;
+        margin: 15px auto 10px;
+        border-bottom: 1px solid red;
+        padding: 15px;
+    }
+
+    .left-nav {
+        list-style-type: none;
+    }
+
+    .left-nav>li {
+        border: 1px solid rgb(226, 243, 70);
+        background-color: rgb(58, 155, 155);
+    }
+
+    .left-nav>li>a {
+        display: block;
+        padding: 15px 45px;
+        transition-duration: 0.7s;
+
+    }
+
+    .left-nav>li>a:hover {
+        background-color: darkred;
+        color: white;
+    }
+
+    .c1 {
+        background-color: rgb(58, 155, 155);
+
+    }
+
+    .footer {
+        align-self: center;
+        justify-self: center;
+        padding-top: 15px;
+    }
+
+    .gallery-table {
+        table-layout: fixed;
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .gallery-table>thead>tr {
+        text-align: center;
+        height: 50;
+
+    }
+
+    .gallery-table>thead>tr>td {
+        font-size: 25px;
+        background-color: darkblue;
+        color: white;
+        font-weight: bold;
+    }
+
+    .gallery-table>tbody>tr {
+        text-align: center;
+        height: 100px;
+
+    }
+
+    .gallery-table>tbody>tr>td {
+        font-size: 13px;
+        background-color: rgb(94, 23, 209);
+        color: white;
+    }
+
+    .gallery-table>tbody>tr>td>img {
+        max-width: 150px;
+        align-content: center;
+        padding: 5px;
+    }
+
+    .gallery-table>tfoot>tr {
+        text-align: center;
+        height: 20px;
+    }
+
+    .gallery-table>tfoot>tr>td {
+        background-color: rgb(54, 179, 218);
+
+    }
+    .h2-content {
+        grid-column: 1 / 5;
+        height: 22px;
+        width: 180px;
+    }
+    .c2-first-row {
+        grid-column: 1 / 5;
+        background-color: darkred;
+        width: 97.5%;
+        margin-left: 15px;
+        height: 60px;
+    }
+    .grid-button {
+        padding: 6px 15px;
+        background-color: darkgreen;
+        float: right;
+        color: white;
+        margin: 12px 30px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .buy-now {
+        padding: 5px 15px;
+        background-color: green;
+        color: white;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .buy-now:hover {
+        background-color: rgb(92, 146, 12);
+    }
+</style>
+
+<body class="main-container">
+    <div class="r1">
+        <img class="logo-name" src="./img/logo_name.gif" alt="logo">
+    </div>
+    <div class="r2 two-column">
+        <div>
+            <div class="c1">
+                <h2 class="txt-center"> Navigation</h2>
+                <div class="left-nav">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact-us.html">Contact us</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./login.html">Log In</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="c2">
+            <div class="c2-first-row">
+                <a href="./gallery.html" class="grid-button">Gallery View</a>
+                <h2 class="txt-center h2-content">Grid View</h2>
+            </div>
+            <table class="gallery-table">
+                <thead>
+                    <tr>
+                        <td>Image</td>
+                        <td>Item #</td>
+                        <td>Name</td>
+                        <td>Description</td>
+                        <td>Price</td>
+                        <td>Buy Now</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img1.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                            <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img2.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                                <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img3.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                                <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img4.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                                <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img5.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                                <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img6.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                                <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img7.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                                <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/gy_img8.jpg" alt="image1">
+                        </td>
+                        <td>
+                            <h1>120180</h1>
+                        </td>
+                        <td>
+                            <h1>Picture</h1>
+                        </td>
+                        <td>
+                            <p>This product is from Mexico</p>
+                        </td>
+                        <td>
+                            <p>$560.00</p>
+                        </td>
+                        <td>
+                                <button class="buy-now">Buy Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="r3">
+        <div class="footer">Copyright @2019. Created by Jose Rosales</div>
+    </div>
+</body>
+
+</html>

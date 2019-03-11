@@ -83,6 +83,13 @@
         justify-self: center;
         padding-top: 15px;
     }
+    .error-message {
+       color: darkred;
+        padding: 7px;
+        margin-top: 2px;
+        display: block;
+        display: none;
+    }
 </style>
 <body class="main-container">
     <div class="r1 box-shadow">
@@ -91,14 +98,16 @@
     <div class="r2 box-shadow">
         <form class="login-form box-shadow">
             <img src="./img/bg_background_sign_in_form.jpg" alt="Logo form">
-            <input type="text" class="login-input" placeholder="Username">
-            <input type="password" class="login-input" placeholder="Password">
-            <button type="submit" class="btn-login" href="./home.html">Login</button>
+            <input type="text" class="login-input" placeholder="Username" id="username">
+            <input type="password" class="login-input" placeholder="Password" id="password">
+            <button onclick="login.login()" type="button" class="btn-login">Login</button>
+            <span id= "error-box" class="error-message">Error Here</span>
         </form>
     </div>
     <div class="r3 box-shadow">
             <div class="footer">Copyright @2019. Created by Jose Rosales</div>
     </div>
+    <script type="text/javascript" src="./js/login.js"></script>
 </body>
 
 </html>

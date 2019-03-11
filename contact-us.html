@@ -18,7 +18,16 @@
         height: 100vh;
         background-image: url('./img/bg_back.png');
     }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
 
+    h2 {
+        background-color: brown;
+        color: yellow;
+    }
     .main-container {
         display: grid;
         grid-template-rows: 3fr 13fr 1fr;
@@ -30,9 +39,14 @@
         height: 175px;
     }
     .r2 {
-        background-color: lightgreen;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        background-color: aquamarine;
         width: 98%;
         margin-left: 1%;
+        height: 100%;
+        align-self: center;
+        grid-column-gap: 0.5em
     }
     .r3 {
         background-color: darkblue;
@@ -40,8 +54,35 @@
         width: 100vw;
         color: white;
     }
-    .two-column {
+    .txt-center {
+        text-align: center;
+        margin: 15px auto 10px;
+        border-bottom: 1px solid red;
+        padding: 15px;
+    }
 
+    .left-nav {
+        list-style-type: none;
+    }
+
+    .left-nav>li {
+        border: 1px solid rgb(226, 243, 70);
+        background-color:rgb(58, 155, 155);
+    }
+
+    .left-nav>li>a {
+        display: block;
+        padding: 15px 45px;
+        transition-duration: 0.7s;
+    }
+
+    .left-nav>li>a:hover {
+        background-color: darkred;
+        color: white;
+    }
+    .h2-content {
+        grid-column: 1 / 5;
+        width: 100%;
     }
     .contact-form {
         display: grid;
@@ -79,22 +120,32 @@
         <img class="logo-name" src="./img/logo_name.gif" alt="logo">
     </div>
     <div class="r2 two-column">
-        <div>
-
+        <div class="r2c1">
+            <h2 class="txt-center"> Navigation</h2>
+            <div class="left-nav">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact-us.html">Contact us</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./login.html">Log In</a></li>
+            </div>
         </div>
         <div class="c2">
+                <h2 class="txt-center">Contact Us</h2>
             <form class="contact-form">
                 <input placeholder="First Name" type="text" id="first_name" class="contact-input">
                 <input placeholder="Last Name" type="text" id="last_name" class="contact-input">
                 <input placeholder="Email" type="email" id="email" class="contact-input">
-                <input placeholder="Password" type="text" id="password" class="contact-input">
-                <button href="./home.html" class="submit-button" type="submit">Submit</button>
+                <input placeholder="Password" type="password" id="password" class="contact-input">
+                <button onclick="contact.goToHome()" class="submit-button" type="submit">Submit</button>
             </form>
          </div>
     </div>
     <div class="r3">
             <div class="footer">Copyright @2019. Created by Jose Rosales</div>
     </div>
+   <script type="text/javascript" src="./js/contact.js"></script>
 </body>
+
 
 </html>
