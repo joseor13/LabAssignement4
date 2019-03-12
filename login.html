@@ -3,94 +3,8 @@
 
 <head>
     <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-    }
-    html, body {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('./img/bg_back.png');  
-    }
-    .box-shadow {
-        -webkit-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
-        -moz-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
-        box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
-    }
-    .main-container {
-        display: grid;
-        grid-template-rows: 1fr 15fr 1fr;
-        grid-row-gap: 1em;
-    }
-    .r1 > img {
-        width: 100vw;
-        height: 175px;
-    }
-    .r3 {
-        width: 100vw;
-        text-align: center;
-        background-color: darkblue;
-        color: white;
-    }
-    .login-form {
-        display: grid;
-        background-color: blue;
-        justify-self: center;
-        align-self: center;
-        grid-template-rows: 5fr 1fr 1fr 1fr;
-        width: 450px;
-        height: 450px;
-        grid-row-gap: 1em;
-        padding: 15px;
-
-    }
-    .login-form > img {
-        width: 350px;
-        height: 250px;
-        justify-self: center;
-    }
-
-    .r2 {
-        display: grid;
-        background-color: rgb(58, 155, 155);
-        width: 98%;
-        margin-left:1%; 
-        padding-top: -300px;
-    }
-
-    .btn-login {
-        height: 40px;
-        width: 100px;
-        background-color: brown;
-        color:white;
-        align-self: right;
-        justify-self: right;
-        font-weight: bold;
-        margin-right: 50px; 
-    }
-    .login-input {
-        width: 330px;
-        height: 40px;
-        justify-self: center;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    .footer {
-        align-self: center;
-        justify-self: center;
-        padding-top: 15px;
-    }
-    .error-message {
-       color: darkred;
-        padding: 7px;
-        margin-top: 2px;
-        display: block;
-        display: none;
-    }
-</style>
 <body class="main-container">
     <div class="r1 box-shadow">
       <img class="logo-name" src="./img/logo_name.gif" alt="logo">
@@ -98,9 +12,9 @@
     <div class="r2 box-shadow">
         <form class="login-form box-shadow">
             <img src="./img/bg_background_sign_in_form.jpg" alt="Logo form">
-            <input type="text" class="login-input" placeholder="Username" id="username">
+            <input type="text" class="login-input" placeholder="User Name" id="username">
             <input type="password" class="login-input" placeholder="Password" id="password">
-            <button onclick="login.login()" type="button" class="btn-login">Login</button>
+             <button onclick="login.login()" type="button" class="btn-login">Login</button>
             <span id= "error-box" class="error-message">Error Here</span>
         </form>
     </div>

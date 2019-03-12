@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/bg_back.png');  
+}
+.box-shadow {
+    -webkit-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
+    -moz-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
+    box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
+}
+.main-container {
+    display: grid;
+    grid-template-rows: 1fr 15fr 1fr;
+    grid-row-gap: 1em;
+    height: 100%;
+}
+.r1 > img {
+    width: 100vw;
+    height: 175px;
+}
+.r3 {
+    width: 100vw;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+.login-form {
+    background-color: blue;
+    justify-self: center;
+    align-self: center;
+    width: 450px;
+    height: 450px;
+}
+.login-form > img {
+    width: 350px;
+    height: 250px;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.r2 {
+    display: grid;
+    background-color: rgb(58, 155, 155);
+    width: 98%;
+    margin-left:1%; 
+}
+
+.btn-login {
+    height: 40px;
+    width: 100px;
+    background-color: brown;
+    color:white;
+    align-self: right;
+    justify-self: right;
+    font-weight: bold;
+    margin-right: 50px; 
+    display: block;
+    float:right;
+}
+.login-input {
+    width: 78%;
+    height: 40px;
+    justify-self: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 50px;
+}
+.footer {
+    align-self: center;
+    justify-self: center;
+    padding-top: 15px;
+}
+.error-message {
+    background-color: black;
+    color: yellow;
+    padding: 7px;
+    margin: 5px 50px;
+    display: block;
+    display: none;
+    width: 110px;
+}

@@ -1,22 +1,14 @@
-class login {
+class Login {
 
     constructor() {
 
     }
     login() {
         const usernameInput = document.getElementById('username');
-        console.log('from login() usernameInput', usernameInput);
-        
         const passwordInut = document.getElementById('password');
-        
         let username = usernameInput.value;
-        let password = passwordInut.Value;
-
-        console.log('username', username);
-        console.log('password', password);
-    
-      
-        if(username === 'jose' && password === 'abc123') {
+        let password = passwordInut.value;
+        if(username === 'jose' && password === '123abc') {
           this.goToHome();
       }else {
           this.displayError();
@@ -24,16 +16,17 @@ class login {
     }
     displayError() {
         const errorBox = document.getElementById('error-box');
-        errorBox.innerHTML = 'User Not Found;';
-        console.log('errorBox.innerHTML',
-        errorBox.innerHTML
+        errorBox.innerHTML = 'User Not Found!';
         );
         errorBox.style = "display: block;";
-    
+        const interval = setInterval(() => {
+         errorBox.style = "display: none;"
+        clearInterval(interval);
+            }, 5000);
     }
     goToHome () {
         window.location.href = 'home.html'
     }
 }
 
-const login = new login();
+const login = new Login();

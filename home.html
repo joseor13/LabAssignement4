@@ -3,132 +3,8 @@
 
 <Head>
     <title> Home Page </title>
+    <link rel="stylesheet" href="./css/style.CSS">
 </Head>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-    }
-
-    html,
-    body {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('./img/bg_back.png');
-    }
-
-    a {
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-    }
-
-    h2 {
-        background-color: brown;
-        color: yellow;
-    }
-
-    .box-shadow {
-        -webkit-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
-        -moz-box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
-        box-shadow: 2px 0px 56px 3px rgba(110, 153, 124, 1);
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-rows: 3fr 13fr 1fr;
-        grid-row-gap: 1em;
-    }
-
-    .r1>img {
-        width: 100vw;
-        height: 175px;
-    }
-
-    .r3 {
-        width: 100%;
-        text-align: center;
-        background-color: darkblue;
-    }
-
-    .r2 {
-        display: grid;
-        grid-template-columns: 1fr 6fr 2fr;
-        background-color: aquamarine;
-        width: 98%;
-        margin-left: 1%;
-        height: 100%;
-        align-self: center;
-        grid-column-gap: 0.5em;
-    }
-
-    .txt-center {
-        text-align: center;
-        margin: 15px auto 10px;
-        border-bottom: 1px solid red;
-        padding: 15px;
-    }
-
-    .left-nav {
-        list-style-type: none;
-    }
-
-    .left-nav>li {
-        border: 1px solid rgb(226, 243, 70);
-        background-color:rgb(58, 155, 155);
-    }
-
-    .left-nav>li>a {
-        display: block;
-        padding: 15px 45px;
-        transition-duration: 0.7s;
-
-    }
-
-    .left-nav>li>a:hover {
-        background-color: darkred;
-        color: white;
-    }
-
-    .r2c1,
-    .r2c3 {
-        background-color: rgb(58, 155, 155);
-    }
-
-    .r2c2 {
-        display: grid;
-        grid-gap: 0.5em;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: min-content;
-
-    }
-
-    .h2-content {
-        grid-column: 1 / 5;
-        width: 97%;
-    }
-
-    .r2c2>img {
-        width: 100%;
-        align-self: center;
-        max-height: 130px;
-
-    }
-
-    .r3 {
-        text-align: center;
-        color: white;
-        align-items: center;
-    }
-
-    .footer {
-        align-self: center;
-        justify-self: center;
-        padding-top: 15px;
-    }
-</style>
-
 <Body class="grid-container">
     <div class="r1 box-shadow">
         <img class="logo-name" src="./img/logo_name.gif" alt="logo">
@@ -157,6 +33,10 @@
         </div>
         <div class="r2c3">
             <h2 class="txt-center">Recent products</h2>
+            <p>Craig School of Business, Fresno State</p>
+            <img src="./img/fresno.state.csb.jpg" alt="fresno state"> 
+            <p>The official Mascot for Fresno State University</p>
+            <img src="./img/fs.logo.jpg" alt="Fresno state logo">
         </div>
     </div>
     <div class="r3 box-shadow">
