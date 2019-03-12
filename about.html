@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    html,
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: lightgreen;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 3fr 13fr 1fr;
+        grid-row-gap: 1em;
+    }
+
+    .r2 {
+        display: grid;
+        grid-template-columns: .25fr 13fr .25fr;
+        background-color: azure;
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .r1>img {
+        width: 100vw;
+        height: 175px;
+    }
+    .r3 {
+        background-color: darkblue;
+        text-align: center;
+        color: white;
+    }
+
+    .r2c1,
+    .r2c3 {
+        background-color: red;
+    }
+
+    .r2c2 {
+        background-color: rgb(137, 132, 163);
+        grid-template-rows: 8fr 8fr;
+        padding: 5px 20px;
+    }
+
+    .r2c2r1,
+    .r2c2r2 {
+        padding: 5px 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .r2c2r2  {
+        margin-top: 100px;
+    }
+
+    .r2c2r1> img>h1 >p, .r2c2r2>img>h1>p  {
+        display: block;
+        padding: 15px;
+        width: 100vw;
+    }
+
+    .top-image {
+        padding-right: 15px;
+        float: left;
+    }
+
+    .bottom-image {
+        float: right;
+        padding: 15px 0px 15px 15px;
+    }
+
+    .footer {
+        align-self: center;
+        justify-self: center;
+        padding-top: 15px;
+    }
+</style>
+
+<body class="grid-container">
+    <div class="r1">
+        <img class="logo-name" src="./img/logo_name.gif" alt="logo">
+    </div>
+    <div class="r2">
+        <div class="r2c1">
+        </div>
+        <div class="r2c2">
+            <div class="r2c2r1">
+                <img class="top-image" src="./img/bd_image1.PNG" alt="angular">
+                <h1 href="./home.html">SPEED & PERFORMANCE</h1>
+                <p>Build features quickly with simple, declarative templates. Extend the template language with your
+                    own
+                    components and use a wide array of existing components. Get immediate Angular-specific help and
+                    feedback with nearly every IDE and editor. All this comes together so you can focus on building
+                    amazing apps rather than trying to make the code work. When building forms in Angular, it's
+                    important to understand how the framework handles data flowing from the user or from
+                    programmatic changes. Reactive and template-driven forms follow two different strategies when
+                    handling form input. The data flow examples below begin with the favorite color input field
+                    example from above, and then show how changes to favorite color are handled in reactive forms
+                    compared to template-driven forms.</p>
+            </div>
+            <div class="r2c2r2">
+                <img class="bottom-image" src="./img/bd_image2.png" alt="angular2">
+                <h1>INCREDIBLE TOOLING</h1>
+                <p>Achieve the maximum speed possible on the Web Platform today, and take it further, via Web
+                    Workers
+                    and server-side rendering. Angular puts you in control over scalability. Meet huge data
+                    requirements by building data models on
+                    RxJS, Immutable.js or another push-model. As described above, in reactive forms each form
+                    element in the view is directly linked to a form model (FormControl instance). Updates from the
+                    view to the model and from the model to the view are synchronous and aren't dependent on the UI
+                    rendered. The diagrams below use the same favorite color example to demonstrate how data flows
+                    when an input field's value is changed from the view and then from the model</p>
+
+                <p>Installing the Angular service worker is as simple as including an NgModule. In addition to
+                    registering the Angular service worker with the browser, this also makes a few services available
+                    for injection which interact with the service worker and can be used to control it. For example, an
+                    application can ask to be notified when a new update becomes available, or an application can ask
+                    the service worker to check the server for available updates. To support these behaviors, the
+                    Angular service worker loads a manifest file from the server. The manifest describes the resources
+                    to cache and includes hashes of every file's contents. When an update to the application is
+                    deployed, the contents of the manifest change, informing the service worker that a new version of
+                    the application should be downloaded and cached. This manifest is generated from a CLI-generated
+                    configuration file called ngsw-config.json.</p>
+            </div>
+        </div>
+        <div class="r2c3">
+        </div>
+    </div>
+    <div class="r3">
+        <div class="footer">Copyright @2019. Created by Jose Rosales</div>
+    </div>
+</body>
+
+</html>
