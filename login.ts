@@ -14,10 +14,14 @@ class Login {
           this.displayError();
       }
     }
+
+    logout() {
+        window.location.href = 'login.html';
+    }
+
     displayError() {
         const errorBox = document.getElementById('error-box');
         errorBox.innerHTML = 'User Not Found!';
-        );
         errorBox.style = "display: block;";
         const interval = setInterval(() => {
          errorBox.style = "display: none;"
